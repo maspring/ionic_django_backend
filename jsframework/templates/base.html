@@ -1,0 +1,34 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html ng-app>
+  <head>
+    <title>Django Project Three</title>
+
+  </head>
+
+  <body>
+    <h1>Namaste!</h1>
+    <h1>Base.html</h1>
+    <h1>May 26, 2015</h1>
+
+    <div class="content">
+        {%  block content %} {%  endblock %}
+
+    </div>
+
+
+    <footer>
+
+        <!-- Angular Files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
+
+        <!-- Static Files -->
+      <!-- <script src="{% static 'jsframework/js/angular.js' %}"></script> -->
+
+    </footer>
+
+  </body>
+</html>
