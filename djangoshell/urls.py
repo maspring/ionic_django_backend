@@ -19,5 +19,11 @@ from jsframework import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+
+    # API console and entry point
+    url(r'^api/images/', include('jsframework.api.urls')),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+
+    # route to base web UI
     url(r'^$', views.base)
 ]
